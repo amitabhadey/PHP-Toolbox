@@ -11,7 +11,6 @@ include_once 'includes/dbh.inc.php';
   <body>
 
 <?php
-
     $sql = "SELECT * FROM users;";
     $result = mysqli_query($conn, $sql);
     $resultCheck = mysqli_num_rows($result);
@@ -22,7 +21,6 @@ include_once 'includes/dbh.inc.php';
         echo $row['user_uid']."<br>";
       }
     }
-
 ?>
 
   </body>
